@@ -124,7 +124,7 @@ return {
         end,
       },
       window = {
-        width = 36,
+        width = 30,
         mappings = {
           ["<space>"] = false, -- disable space until we figure out which-key disabling
           ["[b"] = "prev_source",

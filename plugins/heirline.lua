@@ -3,10 +3,19 @@ return {
   opts = function(_, opts)
     local status = require "astronvim.utils.status"
 
-    opts.statusline = { -- statusline
+    -- custom heirline statusline component for grapple
+    status.component.grapple = {
+      provider = function()
+        local available, grapple = pcall(require, "grapple")
+        if available then return grapple.statusline() end
+      end,
+    }
+
+    opts.statusline = {
       hl = { fg = "fg", bg = "bg" },
-      status.component.mode { mode_text = { padding = { left = 1, right = 1 } } }, -- add the mode text
+      status.component.mode(),
       status.component.git_branch(),
+      status.component.grapple, -- load the custom component
       status.component.file_info { filetype = {}, filename = false, file_modified = false },
       status.component.git_diff(),
       status.component.diagnostics(),
@@ -16,9 +25,7 @@ return {
       status.component.lsp(),
       status.component.treesitter(),
       status.component.nav(),
-      -- remove the 2nd mode indicator on the right
+      status.component.mode { surround = { separator = "right" } },
     }
-
-    return opts
   end,
 }
