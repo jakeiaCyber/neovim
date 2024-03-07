@@ -8,10 +8,10 @@ function M.init()
 end
 
 function M.config()
-  vim.o.guifont = "JetBrainsMono Nerd Font Mono:h18"
+  vim.o.guifont = "FiraCode Nerd Font Mono:h18"
   vim.g.neovide_no_idle = true
   vim.g.neovide_confirm_quit = true
-  vim.g.neovide_fullscreen = false
+  vim.g.neovide_fullscreen = true
   vim.g.neovide_remember_window_size = true
   vim.g.neovide_input_macos_alt_is_meta = true
   vim.g.neovide_cursor_vfx_mode = "railgun"
