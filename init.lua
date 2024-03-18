@@ -19,7 +19,10 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "tokyonight-night",
+  -- colorscheme = "tokyonight-night",
+  -- colorscheme = "monokai-pro",
+  -- colorscheme = "everforest",
+  colorscheme = "dracula",
   -- colorscheme = "catppuccin",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
@@ -109,11 +112,11 @@ return {
     Ellipsis = "",
     FileModified = "",
     FileReadOnly = "",
-    FoldClosed = "",
-    FoldOpened = "",
-    FolderClosed = "",
-    FolderEmpty = "",
-    FolderOpen = "",
+    -- FoldClosed = "",
+    -- FoldOpened = "",
+    -- FolderClosed = "",
+    -- FolderEmpty = "",
+    -- FolderOpen = "",
     Git = "",
     GitConflict = "",
     GitIgnored = "",

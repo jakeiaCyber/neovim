@@ -6,10 +6,9 @@
 
 return {
   "catppuccin/nvim",
-  enabled = false,
   name = "catppuccin",
   opts = {
-    transparent_background = true,
+    transparent_background = false,
     show_end_of_buffer = true,
     flavour = "mocha", -- latte, frappe, macchiato, mocha
     background = { -- :h background
