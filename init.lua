@@ -21,8 +21,9 @@ return {
   -- Set colorscheme to use
   -- colorscheme = "tokyonight-night",
   -- colorscheme = "monokai-pro",
-  colorscheme = "everforest",
+  -- colorscheme = "everforest",
   -- colorscheme = "dracula",
+  colorscheme = "gruvbox-baby",
   -- colorscheme = "catppuccin",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
